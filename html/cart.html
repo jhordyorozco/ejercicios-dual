@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Carrito de compras</h1>
+  <h2>Bienvenido al carrito de compras</h2>
+  <h3>Contenido del carrito</h3>
+  <h4>Resumen de productos</h4>
+  <h5>Detalles del carrito</h5>
+  <h6>Información adicional</h6>
+
+  <span>Este es un texto destacado en el carrito.</span>
+
+  <div class="description">
+    <p>Este es el contenido de la descripción del carrito.</p>
+    <br>
+    <p>Este es el contenido de la descripción del carrito.</p>
+    <p>Por solo 50 Euros, !Ahora es gratis!</p>
+  </div>
+
+  <div class="image">
+    <img src="https://via.placeholder.com/150" alt="Imagen del carrito" title="Imagen del carrito">
+  </div>
+
+  <a href="https://www.example.com" target="_blank">Ir a la página de ejemplo</a> 
+
+  <ul>
+    <li>Producto 1</li>
+    <li>Producto 2</li>          
+    <li>Producto 3</li>
+  </ul>
+
+  <div class="checkout-form">
+    <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" placeholder="Ingrese su nombre" name="name" value="Jhordy" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Dirección:</label>
+      <input type="text" id="address" name="address" required>
+
+      <button type="submit">Finalizar compra</button>
+      <textarea name="comments" rows="4" cols="50" placeholder="Comentarios adicionales"></textarea>
+
+      <label for="payment-method">Método de pago:</label>
+
+      <select name="payment-method" required>
+        <option value=""></option>
+        <option value="credit-card">Tarjeta de crédito</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank-transfer">Transferencia bancaria</option>
+      </select>
+    </form>
+  </div>
+
+   <div class="checkout-form">
+    <form>
+      <div class="form-element">
+        <div class="form-element-label">
+          <label for="name">Nombre:</label>
+        </div>
+        <div class="form-element-input">
+          <input type="text" id="name" name="name" required>
+      </div>
+    <button type="submit">Finalizar compra</button>
+  </div>
+  </form>
+  
+  <div class="avatar">
+    <img src="./imagenes/ardilla2.webp" alt="Avatar">
+  </div>
+
+  <picture>
+    <source srcset="./imagenes/ardilla2.webp" type="image/webp" width="300" height="200">
+    <img src="./imagenes/ardilla2.jpg" alt="Imagen de ejemplo">
+  </picture>
+
+  
+</body>
+</html>
