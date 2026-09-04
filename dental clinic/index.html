@@ -10,23 +10,58 @@
 
 <body>
   <header>
-    <div class="logo">
-      <img src="./img/3-layers.webp" alt="">
+    <div class="top-bar">
+      <div class="contact-info">
+        <div class="contact-info-element">
+          <div class="contact-info-element-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>map-marker-outline</title>
+              <path
+                d="M12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5M12,2A7,7 0 0,1 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9A7,7 0 0,1 12,2M12,4A5,5 0 0,0 7,9C7,10 7,12 12,18.71C17,12 17,10 17,9A5,5 0 0,0 12,4Z" />
+            </svg>
+          </div>
+          <div class="contact-info-element-text">
+            <span>123, New Lenox Chicago, IL 60606</span>
+          </div>
+        </div>
+        <div class="contact-info-element">
+          <div class="contact-info-element-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>email-open-outline</title>
+              <path
+                d="M21.03 6.29L12 .64L2.97 6.29C2.39 6.64 2 7.27 2 8V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 7.27 21.61 6.64 21.03 6.29M20 18H4V10L12 15L20 10V18M12 13L4 8L12 3L20 8L12 13Z" />
+            </svg>
+          </div>
+          <div class="contact-info-element-text">
+            <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="social-networks">
+        <div class="social-network"></div>
+        <div class="social-network"></div>
+        <div class="social-network"></div>
+      </div>
     </div>
-    <div class="navbar">
-      <a href="#">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Services</a>
-      <a href="#">Team</a>
-      <a href="#">Blog</a>
-      <a href="#">Appointment</a>
-      <a href="#">Contact</a>
-    </div>
-    <div class="search-bar">
-      <form>
-        <input type="text" placeholder="Search...">
-        <button>Search</button>
-      </form>
+    <div class="main-bar">
+      <div class="logo">
+        <img src="./img/3-layers.webp" alt="">
+      </div>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Services</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Appointment</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="search-bar">
+        <form>
+          <input type="text" placeholder="Search...">
+          <button>Search</button>
+        </form>
+      </div>
     </div>
   </header>
 
@@ -38,11 +73,17 @@
           <img src="./img/dental-health-hero.webp" alt="dental-patient-hero">
         </picture>
       </div>
-      <div class="text-hero">
-        <h1>Complete Oral health Starts Here & Now!</h1>
-        <p>If you have any worries, concerns, or questions about visiting a dentis, please give us a call!
-        </p>
-        <button>Make an Appointment</button>
+      <div class="hero-call-to-action">
+        <div class="hero-title">
+          <h1>Complete Oral health Starts Here & Now!</h1>
+        </div>
+        <div class="hero-description">
+          <p>If you have any worries, concerns, or questions about visiting a dentis, please give us a call!
+          </p>
+        </div>
+        <div class="hero-button">
+          <button>Make an Appointment</button>
+        </div>
       </div>
     </section>
 
@@ -52,12 +93,14 @@
           <img src="./img/dental-implants.webp" alt="dental-implants">
         </div>
 
-        <div class="card-title">
-          <h2>Dental Implants</h2>
-        </div>
+        <div class="card-text">
+          <div class="card-title">
+            <h2>Dental Implants</h2>
+          </div>
 
-        <div class="card-description">
-          <p>Dental implants are the closest you can get yo healty, beautiful and natural teeth.</p>
+          <div class="card-description">
+            <p>Dental implants are the closest you can get yo healty, beautiful and natural teeth.</p>
+          </div>
         </div>
       </div>
 
@@ -106,7 +149,8 @@
       <div class="welcome-content">
         <div class="welcome-box">
           <h3>We use advanced proven technology to keep your smile looking the best!</h3>
-          <p>We are passionate about smiles and having the latest technology is one step we can take to help save yours!</p>
+          <p>We are passionate about smiles and having the latest technology is one step we can take to help save yours!
+          </p>
           <button>Learn More</button>
         </div>
         <div class="welcome-video">
@@ -135,35 +179,38 @@
             <img src="./img/cosmetic-dentistry.webp" alt="cosmetic dentistry">
           </div>
           <div class="card-we-do-title">
-        <h3><a href="">Cosmetic Dentistry</a></h3>
-      </div>
-      <div class="card-we-do-description">
-        <p>Cosmetic Dentistry refers to the most suitable dental treatments that based on patient’s current teeth or gums condition, concerns, desired outcomes and budget.</p>
-      </div>
+            <h3><a href="">Cosmetic Dentistry</a></h3>
+          </div>
+          <div class="card-we-do-description">
+            <p>Cosmetic Dentistry refers to the most suitable dental treatments that based on patient’s current teeth or
+              gums condition, concerns, desired outcomes and budget.</p>
+          </div>
 
-      <div class="card-we-do-item">
-        <div class="card-we-do-image">
-        <img src="./img/quality-braces.webp" alt="quality braces">
-      </div>
-        <h3><a href="">Quality Braces</a></h3>
-      </div>
-      <div class="card-we-do-description">
-        <p>The purpose of using braces is to make the best of your teeth. This includes allowing you to bite correctly, eat more comfortably, and to care for your teeth and gums more easily.</p>
-      </div>
+          <div class="card-we-do-item">
+            <div class="card-we-do-image">
+              <img src="./img/quality-braces.webp" alt="quality braces">
+            </div>
+            <h3><a href="">Quality Braces</a></h3>
+          </div>
+          <div class="card-we-do-description">
+            <p>The purpose of using braces is to make the best of your teeth. This includes allowing you to bite
+              correctly, eat more comfortably, and to care for your teeth and gums more easily.</p>
+          </div>
 
-      <div class="card-we-do-item">
-        <div class="card-we-do-image">
-        <img src="./img/general-dentistry.webp" alt="general dentistry">
-      </div>
-        <h3><a href="">General Dentistry</a></h3>
-      </div>
-      <div class="card-we-do-description">
-        <p>General dentistry covers a wide range of procedures. The goal of general dentistry is to remove all disease from your mouth and repair broken down teeth, giving you a perfect smile!</p>
-      </div>
+          <div class="card-we-do-item">
+            <div class="card-we-do-image">
+              <img src="./img/general-dentistry.webp" alt="general dentistry">
+            </div>
+            <h3><a href="">General Dentistry</a></h3>
+          </div>
+          <div class="card-we-do-description">
+            <p>General dentistry covers a wide range of procedures. The goal of general dentistry is to remove all
+              disease from your mouth and repair broken down teeth, giving you a perfect smile!</p>
+          </div>
 
-      <div class="card-we-do-button">
-        <button>Make an Appointment</button>
-      </div>
+          <div class="card-we-do-button">
+            <button>Make an Appointment</button>
+          </div>
     </section>
 
     <section class="doctor-progress">
@@ -173,9 +220,21 @@
 
       <div class="doctor-info">
         <h3>Dr. Jane Morrison</h3>
-        <p>There's A Lot You Can Do To Prevent Tooth Loss!<p>
+        <p>There's A Lot You Can Do To Prevent Tooth Loss!
+        <p>
 
-      <div class="progress-item">
+        <div class="progress-item">
+          <div class="progress-bar-info">
+            <div class="progress-bar-text"><span>Pediatric Dentistry</span></div>
+            <div class="progress-bar-quantity">67%</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar-fill"></div>
+          </div>
+        </div>
+
+
+        <div class="progress-item">
           <p>Pediatric Dentistry</p>
           <div class="progress-bar">
             <div class="progress-bar-porcentage">67%</div>
@@ -199,7 +258,7 @@
 
     <section class="services">
       <div class="icon">
-        <img src="./img/dental-implants.webp"alt="tooth icon">
+        <img src="./img/dental-implants.webp" alt="tooth icon">
       </div>
       <div class="icon-description">
         <p>Why Choose Us</p>
@@ -290,9 +349,9 @@
       </div>
 
     </section>
-        
-      <section class="testimonials">
-        <div class="icon">
+
+    <section class="testimonials">
+      <div class="icon">
         <img src="./img/dental-implants.webp" alt="tooth icon">
       </div>
 
@@ -306,47 +365,50 @@
 
       <div class="testimonial-item">
         <div class="testimonial-quote">
-          <p>I have been coming here for years! I would never even think of switching to another dentist. The entire team is friendly and make every experience as comfortable as possible!</p>
+          <p>I have been coming here for years! I would never even think of switching to another dentist. The entire
+            team is friendly and make every experience as comfortable as possible!</p>
         </div>
       </div>
       <div class="testimonials-cards">
         <div class="testimonials-card">
-         <p>I used to dread going to the dentist, but not anymore!"</p> 
+          <p>I used to dread going to the dentist, but not anymore!"</p>
         </div>
-          <img src="./img/gregory-bowman.webp" alt="">
-          <h3>Gregory Bowman</h3>
-          <p>A happy patient, Seattle</p>
-        </div>
+        <img src="./img/gregory-bowman.webp" alt="">
+        <h3>Gregory Bowman</h3>
+        <p>A happy patient, Seattle</p>
+      </div>
       </div>
 
       <div class="testimonial-item">
         <div class="testimonial-quote">
-          <p>The friendly atmosphere and state of the art interior makes you relax. I have had a dental phobia most of my life, but it’s gone after just one visit here!</p>
+          <p>The friendly atmosphere and state of the art interior makes you relax. I have had a dental phobia most of
+            my life, but it’s gone after just one visit here!</p>
         </div>
       </div>
       <div class="testimonials-cards">
         <div class="testimonials-card">
-         <p>I used to dread going to the dentist, but not anymore!"</p> 
+          <p>I used to dread going to the dentist, but not anymore!"</p>
         </div>
-          <img src="./img/helen-smith.webp" alt="">
-          <h3>Helen Smith</h3>
-          <p>A happy patient, New York</p>
-        </div>
+        <img src="./img/helen-smith.webp" alt="">
+        <h3>Helen Smith</h3>
+        <p>A happy patient, New York</p>
+      </div>
       </div>
 
       <div class="testimonial-item">
         <div class="testimonial-quote">
-          <p>After visiting a number of dentists over the years, I have finally found one who I trust, without a doubt the most caring and professional staff.</p>
+          <p>After visiting a number of dentists over the years, I have finally found one who I trust, without a doubt
+            the most caring and professional staff.</p>
         </div>
       </div>
       <div class="testimonials-cards">
         <div class="testimonials-card">
-         <p>I used to dread going to the dentist, but not anymore!"</p> 
+          <p>I used to dread going to the dentist, but not anymore!"</p>
         </div>
-          <img src="./img/gregory-bowman.webp" alt="">
-          <h3>Gregory Bowman</h3>
-          <p>A happy patient, New York</p>
-        </div>
+        <img src="./img/gregory-bowman.webp" alt="">
+        <h3>Gregory Bowman</h3>
+        <p>A happy patient, New York</p>
+      </div>
       </div>
     </section>
 
@@ -366,7 +428,8 @@
           <h3>Try Deep Teeth Whitening</h3>
         </div>
         <div class="success-story-card-description">
-          <p>Tooth whitening is among the most popular cosmetic dental procedures because it can greatly improve how your teeth look by removing stains and discoloration.</p>
+          <p>Tooth whitening is among the most popular cosmetic dental procedures because it can greatly improve how
+            your teeth look by removing stains and discoloration.</p>
           <div class="success-story-card-image">
             <img src="./img/firm.webp" alt="firm">
           </div>
@@ -503,7 +566,10 @@
     </section>
 
     <section class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d49210.856045932014!2d2.67457971526546!3d39.56685618048838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2ses!4v1788121430919!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d49210.856045932014!2d2.67457971526546!3d39.56685618048838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2ses!4v1788121430919!5m2!1ses-419!2ses"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </section>
   </main>
 
@@ -574,7 +640,8 @@
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectt dipiscing esent vestibulum molestie lacus. Aenean nonu hendreirt mauris. Phasellus porta. Fusce suit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+      <p>Lorem ipsum dolor sit amet, consectt dipiscing esent vestibulum molestie lacus. Aenean nonu hendreirt mauris.
+        Phasellus porta. Fusce suit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
     </div>
 
     <div class="footer-bottom">

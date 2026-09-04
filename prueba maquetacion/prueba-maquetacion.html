@@ -5,21 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Black Leaf</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <title>leaf</title>
-        <path
-          d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
-      </svg>
-    </div>
+    <div class="main-bar">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <title>leaf</title>
+          <path
+            d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
+        </svg>
+      </div>
 
-    <div class="navbar">
-      <nav>
+      <nav class="navbar">
         <ul>
           <li><a href="#">Product</a></li>
           <li><a href="#">Solutions</a></li>
@@ -28,19 +28,19 @@
           <li><a href="#">Docs</a></li>
         </ul>
       </nav>
-    </div>
 
-    <div class="search-bar">
-      <form>
-        <input type="text" placeholder="Search...">
-        <button>Search</button>
-      </form>
-    </div>
+      <div class="search-bar">
+        <form>
+          <input type="text" placeholder="Search...">
+          <button>Search</button>
+        </form>
+      </div>
 
-    <div class="user-bar">
-      <div class="login-button">
-        <a href="#">Log in</a>
-        <a href="#">Cloud login</a>
+      <div class="user-bar">
+        <div class="login-button">
+          <a href="#">Log in</a>
+          <a href="#">Cloud login</a>
+        </div>
       </div>
     </div>
   </header>
@@ -83,29 +83,45 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card-image">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <title>api</title>
+          <title>database-alert</title>
           <path
-            d="M7 7H5A2 2 0 0 0 3 9V17H5V13H7V17H9V9A2 2 0 0 0 7 7M7 11H5V9H7M14 7H10V17H12V13H14A2 2 0 0 0 16 11V9A2 2 0 0 0 14 7M14 11H12V9H14M20 9V15H21V17H17V15H18V9H17V7H21V9Z" />
+            d="M18 7C18 9.21 14.42 11 10 11S2 9.21 2 7 5.58 3 10 3 18 4.79 18 7M10 18C5.58 18 2 16.21 2 14V17C2 19.21 5.58 21 10 21S18 19.21 18 17V14C18 16.21 14.42 18 10 18M10 13C5.58 13 2 11.21 2 9V12C2 14.21 5.58 16 10 16S18 14.21 18 12V9C18 11.21 14.42 13 10 13M20 17H22V15H20V17M20 7V13H22V7H20Z" />
         </svg>
-        <h2>API Management Dashboard</h2>
-        <p>Open up your APIs to the world, without touching a single line of code.</p>
       </div>
 
-      <div class="card">
+      <div class="card-title">
+        <h2>Open Source API Gateway</h2>
+      </div>
+
+      <div class="card-description">
+        <p>We provide the best solutions for your business, with our tools you can manage your business in a better
+          way.</p>
+      </div>
+      </div>
+
+      <div class="card-image">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <title>developer-board</title>
+          <title>database-alert</title>
           <path
-            d="M22,9V7H20V5A2,2 0 0,0 18,3H4A2,2 0 0,0 2,5V19A2,2 0 0,0 4,21H18A2,2 0 0,0 20,19V17H22V15H20V13H22V11H20V9H22M18,19H4V5H18V19M6,13H11V17H6V13M12,7H16V10H12V7M6,7H11V12H6V7M12,11H16V17H12V11Z" />
+            d="M18 7C18 9.21 14.42 11 10 11S2 9.21 2 7 5.58 3 10 3 18 4.79 18 7M10 18C5.58 18 2 16.21 2 14V17C2 19.21 5.58 21 10 21S18 19.21 18 17V14C18 16.21 14.42 18 10 18M10 13C5.58 13 2 11.21 2 9V12C2 14.21 5.58 16 10 16S18 14.21 18 12V9C18 11.21 14.42 13 10 13M20 17H22V15H20V17M20 7V13H22V7H20Z" />
         </svg>
-        <h2>API Developer Portal</h2>
-        <p>Share your APIs and documentation with your developer community.</p>
+      </div>
+
+      <div class="card-title">
+        <h2>Open Source API Gateway</h2>
+      </div>
+
+      <div class="card-description">
+        <p>We provide the best solutions for your business, with our tools you can manage your business in a better
+          way.</p>
+      </div>
       </div>
     </section>
 
     <section class="accordion">
-      <div class="accordion-title">
+      <div class="accordion-tittle">
         <h2>Questons? Look Here</h2>
       </div>
 
@@ -237,7 +253,7 @@
 
     <div class="footer-row">
       <div class="footer-content">
-        <p>&copy; 2024 Black Leaf. All rights reserved.</p>
+        <span>&copy; 2024 Black Leaf. All rights reserved.</span>
       </div>
     </div>
   </footer>
