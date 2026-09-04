@@ -1,0 +1,938 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+header {
+    background: hsl(213, 24%, 30%);
+}
+
+.bar-top {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.bar-top-content {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0;
+}
+
+.bar-top-social {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.bar-top-social a {
+    display: flex;
+    color: hsl(0, 0%, 100%);
+}
+
+.bar-top-social a svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: currentColor;
+}
+
+.bar-top-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.bar-top-info a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: hsl(0, 1%, 80%);
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-offset: 0.15rem;
+    white-space: nowrap;
+}
+
+.bar-top-info a svg {
+    width: 0.9rem;
+    height: 0.9rem;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.principal-bar {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    align-items: center;
+    gap: 1rem;
+    padding: 1.1rem 0;
+}
+
+.principal-bar p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+    font-weight: 300;
+}
+
+.principal-bar span {
+    display: block;
+    font-size: 0.5rem;
+    letter-spacing: 0.3rem;
+    color: hsl(36, 43%, 66%);
+    margin-top: 0.15rem;
+}
+
+.principal-bar-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    margin-left: auto;
+}
+
+.principal-bar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.9rem;
+}
+
+.principal-bar nav a {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.principal-bar nav a:hover {
+    color: hsl(36, 43%, 66%);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-actions button {
+    background: transparent;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    padding: 0;
+}
+
+.header-actions button svg {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+}
+
+/* Portada+logo y titulo */
+.hero {
+    position: relative;
+    min-height: 32rem;
+    display: grid;
+}
+
+.hero-background {
+    grid-area: 1 / 1;
+    position: relative;
+    background: hsl(213, 24%, 30%);
+    height: 80%;
+    overflow: hidden;
+}
+
+.hero-background picture,
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.hero-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: hsla(213, 30%, 20%, 90%);
+}
+
+.hero-call-to-action {
+    grid-area: 1 / 1;
+    position: relative;
+    z-index: 10;
+    justify-self: center;
+    align-self: center;
+    width: min(40rem, 60%);
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title:first-of-type h2 {
+    color: hsl(36, 43%, 66%);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.hero-title h1 {
+    color: hsl(36, 43%, 66%);
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+}
+
+.hero-description p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.hero-description span {
+    color: hsl(36, 43%, 66%);
+}
+
+.hero-line {
+    width: 100%;
+    height: 1px;
+    background: hsla(0, 0%, 100%, 0.5);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.hero-button-primary button {
+    background: hsl(36, 43%, 66%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(36, 43%, 66%);
+    padding: 0.9rem 1.8rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+}
+
+.hero-button-primary button:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    transition: 0.3s;
+}
+
+.hero-button-secondary button {
+    background: transparent;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(36, 43%, 66%);
+    padding: 0.9rem 2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+}
+
+.hero-button-secondary button:hover {
+    background: hsl(36, 43%, 66%);
+    transform: translateY(-5px);
+    background: transparent;
+    transition: 0.3s;
+}
+
+.section {
+    display: grid;
+    gap: 1.5rem;
+    padding-block: 3.5rem;
+}
+
+.section-tight {
+    padding-block: 2rem 3.5rem;
+}
+
+
+/* Tu clínica dental en el Eixample */
+.content-call-to-action {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    align-items: center;
+    gap: 1.5rem 3rem;
+}
+
+.content-title,
+.content-subtittle,
+.content-line {
+    grid-column: 1 / -1;
+}
+
+.content-title {
+    text-align: center;
+}
+
+.content-title h2 {
+    color: hsl(213, 24%, 40%);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
+.content-title span {
+    color: hsl(213, 24%, 20%);
+    font-weight: 700;
+}
+
+.content-subtittle {
+    text-align: center;
+}
+
+.content-subtittle p {
+    color: hsl(213, 24%, 40%);
+    font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
+.content-subtittle span {
+    color: hsl(213, 24%, 20%);
+    font-weight: 700;
+}
+
+.content-line {
+    width: 12rem;
+    height: 1px;
+    background: hsl(36, 43%, 66%);
+    justify-self: center;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-text {
+    display: grid;
+    gap: 1.3rem;
+}
+
+.content-description p {
+    color: hsl(213, 10%, 35%);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.content-button button {
+    background: transparent;
+    color: hsl(213, 24%, 30%);
+    border: 1px solid hsl(213, 24%, 30%);
+    padding: 0.9rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    cursor: pointer;
+    justify-self: start;
+}
+
+.content-button button:hover {
+    background: hsl(213, 24%, 30%);
+    color: hsl(0, 0%, 100%);
+}
+
+.interactive-content {
+    max-width: 90%;
+    margin-inline: auto;
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.interactive-content h2 {
+    color: hsl(213, 24%, 40%);
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.interactive-content h2 span {
+    color: hsl(36, 43%, 66%);
+    font-weight: 700;
+}
+
+.interactive-content-card {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Flip card PROBAR */
+.flip-card {
+    width: min(45rem, 100%);
+    width: 100%;
+    max-width: 1120px;
+    aspect-ratio: 16 / 9;
+    perspective: 1500px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    grid-area: 1 / 1;
+    height: 256px;
+    display: grid;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.flip-card-back {
+    background: hsl(213, 24%, 30%);
+    align-content: center;
+    justify-items: center;
+    padding: 2rem;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 30rem;
+}
+
+.flip-card-back p span {
+    color: hsl(36, 43%, 66%);
+    font-weight: 700;
+}
+
+.card-content {
+    display: grid;
+    justify-items: center;
+    gap: 0.5rem;
+}
+
+.card-content h2 {
+    color: hsl(213, 24%, 30%);
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.03rem;
+}
+
+.card-content-call-to-action {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), auto)) minmax(min(20rem, 100%), 2fr) auto;
+    align-items: center;
+    gap: 1.5rem 2rem;
+}
+
+.card-content-call-to-action-icon img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    display: block;
+}
+
+.card-content-call-to-action-title h2 {
+    color: hsl(213, 24%, 30%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+}
+
+.card-content-call-to-action-description p {
+    color: hsl(213, 10%, 35%);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.card-content-call-to-action-button button {
+    background: hsl(36, 43%, 66%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(36, 43%, 66%);
+    padding: 0.9rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.card-content-line {
+    width: 30rem;
+    height: 1px;
+    background: hsl(36, 43%, 66%);
+    justify-self: center;
+    gap: 2rem 2rem;
+}
+
+.card-content {
+    background-color: hsl(211, 33%, 27%);
+    width: 100%;
+
+}
+
+/* Ortodoncia */
+
+.dark-section {
+    background: hsl(213, 24%, 30%);
+}
+
+.card-content {
+    background: hsl(213, 24%, 30%);
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.card-content .content-line {
+    background: hsl(36, 43%, 66%);
+    width: 50%;
+}
+
+.card-content h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.03rem;
+}
+
+.card-content-grid {
+    width: 60%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    gap: 3rem;
+}
+
+.card-content-call-to-action {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.card-content-call-to-action-icon img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    display: block;
+}
+
+.card-content-call-to-action-title h2 {
+    color: hsl(36, 43%, 66%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+}
+
+.card-content-call-to-action-description p {
+    color: hsl(0, 0%, 90%);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.card-content-call-to-action-button button {
+    background: hsl(36, 43%, 66%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(36, 43%, 66%);
+    padding: 0.9rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Servicios */
+ 
+.free-services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    gap: 2.5rem 3rem;
+    margin: 10%;
+}
+ 
+.free-services-intro {
+    grid-row: 1/3;
+    gap: 1.2rem;
+    border-left: 1px solid hsl(0, 0%, 75%);
+    padding-left: 1.5rem;
+
+}
+ 
+.free-services-intro h2 {
+    color: hsl(213, 24%, 30%);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+ 
+.free-services-intro p {
+    color: hsl(213, 10%, 35%);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+ 
+.free-service-item {
+    text-align: center;
+    gap: 0.6rem;
+}
+ 
+.free-service-item-icon {
+    color: hsl(36, 43%, 66%);
+    font-size: 1.6rem;
+}
+ 
+.free-service-item-icon svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: currentColor;
+}
+ 
+.free-service-item h3 {
+    color: hsl(213, 24%, 30%);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+}
+ 
+.free-service-item p {
+    color: hsl(213, 10%, 40%);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+ 
+.free-service-item-wide {
+    grid-column: 1 / -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Parallax */
+
+.parallax {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    background-image: url("https://www.dentalcarebarcelona.com/wp-content/uploads/2020/12/RECEPCIO_DARK.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: hsl(60, 2%, 91%);
+}
+
+.parallax-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: hsla(0, 0%, 4%, 0.55);
+}
+
+.parallax-content {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 350px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parallax-title {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.parallax-title h2 {
+    margin: 0;
+    color: hsl(60, 2%, 91%);
+    font-size: clamp(28px, 3vw, 38px);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.parallax-title span {
+    color: hsl(36, 43%, 66%);
+}
+
+.parallax-body {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.parallax-description {
+    grid-column: 2;
+    width: 750px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.parallax-description p {
+    margin: 0;
+    color: hsl(60, 2%, 91%);
+    font-size: clamp(15px, 1.5vw, 18px);
+    line-height: 1.7;
+}
+
+.parallax-description span {
+    color: hsl(60, 2%, 91%);
+    font-weight: 700;
+}
+
+.parallax-subtitle {
+    margin-top: 22px;
+}
+
+.parallax-subtitle span {
+    color: hsl(36, 43%, 66%);
+}
+
+.parallax-button {
+    grid-column: 3;
+    justify-self: start;
+    flex-shrink: 0;
+}
+
+.parallax-button a {
+    display: block;
+    padding: 18px 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsl(208, 38%, 31%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.parallax-button a:hover {
+    background-color: hsl(36, 43%, 66%);
+}
+
+/* Footer */
+
+.footer {
+    background: hsl(213, 24%, 30%);
+    color: hsl(208, 16%, 84%);
+    padding: 50px 20px 0;
+}
+
+.footer-columns {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 40px;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.footer-column h3 {
+    color: hsl(38, 51%, 57%);
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    letter-spacing: .3px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-column ul li a:hover {
+    color: hsl(40, 3%, 80%);
+    text-decoration: none;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.footer-brand p:first-child {
+    color: hsl(0, 0%, 100%);
+    font-size: 26px;
+    letter-spacing: 6px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.footer-brand span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: hsl(36, 43%, 66%);
+    margin-top: 2px;
+}
+
+.footer-brand a {
+    color: hsl(45, 50%, 98%);
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.footer-brand a:hover {
+    color: hsl(40, 3%, 80%);
+    text-decoration: none;
+}
+
+.footer-brand p:nth-child(3) a {
+    display: flex;
+    background: hsl(38, 51%, 57%);
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 22px;
+}
+
+.footer-brand p:nth-child(3) a:hover {
+    background: hsl(38, 41%, 50%);
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+    padding: 22px 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    row-gap: 14px;
+}
+
+.footer-bottom p {
+    font-size: 12.5px;
+    color: hsla(0, 0%, 100%, 0.55);
+    margin: 0;
+}
+
+.footer-bottom a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+.footer-bottom a svg {
+    width: 15px;
+    height: 15px;
+    fill: hsl(0, 0%, 100%);
+}
