@@ -656,49 +656,6 @@ header {
     grid-column: 1 / -1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Parallax */
 
 .parallax {
@@ -803,6 +760,372 @@ header {
 
 .parallax-button a:hover {
     background-color: hsl(36, 43%, 66%);
+}
+
+/* Tratamiento */
+
+.treatments {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    gap: 2.5rem;
+}
+ 
+.treatments h2 {
+    color: hsl(213, 24%, 40%);
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+}
+ 
+.treatments h2 span {
+    display: block;
+    color: hsl(36, 43%, 66%);
+}
+ 
+.treatments-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+    gap: 1.5rem;
+}
+ 
+.treatment-card {
+    background: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 88%);
+    padding: 2.2rem 1.6rem 1.8rem;
+    display: grid;
+    justify-items: start;
+    gap: 0.7rem;
+}
+ 
+.treatment-card-icon {
+    color: hsl(36, 43%, 66%);
+    justify-self: center;
+    margin-bottom: 0.3rem;
+}
+ 
+.treatment-card-icon svg {
+    width: 2.6rem;
+    height: 2.6rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.2;
+}
+ 
+.treatment-card h3 {
+    color: hsl(213, 24%, 30%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+}
+ 
+.treatment-card p {
+    color: hsl(213, 10%, 40%);
+    font-size: 0.85rem;
+    line-height: 1.55;
+}
+ 
+.treatment-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: hsl(0, 0%, 100%);
+    background: hsl(213, 24%, 30%);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.7rem 1.1rem;
+    margin-top: 0.5rem;
+}
+ 
+.treatment-card a::before {
+    content: "\203A";
+    color: hsl(36, 43%, 66%);
+    font-weight: 700;
+}
+ 
+.treatment-card a:hover {
+    background: hsl(213, 24%, 22%);
+}
+
+/* garantias */
+
+.guarantees {
+    width: 90%;
+    max-width: 48rem;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    gap: 2.5rem;
+}
+ 
+.divider-vertical {
+    width: 1px;
+    height: 2.5rem;
+    background: hsl(0, 0%, 82%);
+    justify-self: center;
+}
+ 
+.guarantees-block {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+}
+ 
+.guarantees-block-title h2 {
+    color: hsl(213, 24%, 25%);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+ 
+.guarantees-block-title span {
+    display: block;
+    color: hsl(36, 43%, 66%);
+}
+ 
+.guarantees-block-subtitle p {
+    color: hsl(213, 10%, 50%);
+    font-size: 0.85rem;
+}
+ 
+.guarantees-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem 2rem;
+    width: 100%;
+}
+ 
+.guarantees-number {
+    display: grid;
+    justify-items: center;
+    gap: 0.2rem;
+}
+ 
+.guarantees-number strong {
+    color: hsl(36, 43%, 66%);
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1;
+}
+ 
+.guarantees-number span {
+    color: hsl(213, 24%, 25%);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    text-align: center;
+    white-space: nowrap;
+}
+ 
+.team-cta-button {
+    width: 100%;
+}
+ 
+.team-cta-button button {
+    width: 100%;
+    background: transparent;
+    color: hsl(213, 24%, 25%);
+    border: 1px solid hsl(213, 24%, 25%);
+    padding: 0.9rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+}
+ 
+.team-cta-button button:hover {
+    background: hsl(213, 24%, 25%);
+    color: hsl(0, 0%, 100%);
+}
+
+/* Formulario Parallax */
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    min-height: 32rem;
+    padding-block: 4rem;
+    display: grid;
+    place-items: center;
+    background-image: url("https://www.dentalcarebarcelona.com/wp-content/uploads/2020/12/RECEPCIO_DARK.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: hsl(60, 2%, 91%);
+}
+
+.contact-form {
+    width: min(42rem, 92%);
+    background: hsla(213, 32%, 24%, 0.97);
+    border: 1px solid hsl(36, 43%, 66%);
+    padding: 2.5rem 3rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.contact-form h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    text-align: center;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1.4rem;
+}
+
+.contact-form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+    gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 85%);
+    background: hsl(0, 0%, 100%);
+    padding: 1rem 1.1rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: hsl(213, 24%, 25%);
+}
+
+.contact-form textarea {
+    min-height: 7rem;
+    resize: vertical;
+}
+
+.contact-form-check {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.6rem;
+    color: hsl(0, 0%, 85%);
+    font-size: 0.8rem;
+}
+
+.contact-form-check input {
+    margin-top: 0.2rem;
+}
+
+.contact-form-check a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.contact-form button {
+    grid-column: 1/-1;
+    background: hsl(36, 43%, 66%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    justify-self: start;
+}
+
+.contact-form button:hover {
+    background: hsl(36, 43%, 58%);
+}
+
+/* Mapa y marcas */
+
+.location {
+    width: 90%;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.location-eyebrow p {
+    color: hsl(213, 10%, 40%);
+    font-size: 0.95rem;
+    letter-spacing: 0.05rem;
+}
+
+.location-title a {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: hsl(213, 24%, 25%);
+}
+
+.location-title a span {
+    color: hsl(36, 43%, 66%);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.location-phone {
+    width: 100%;
+    background: hsl(36, 43%, 66%);
+    padding: 1rem;
+}
+
+.location-phone a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.location-phone a svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: currentColor;
+}
+
+.location-map iframe {
+    width: min(60rem, 100%);
+    height: 20rem;
+    display: block;
+    border: 1px solid hsl(0, 0%, 85%);
+}
+
+.location-brands {
+    display: grid;
+    justify-items: center;
+    gap: 1.5rem;
+    padding-block-start: 1rem;
+}
+
+.location-brands p {
+    color: hsl(213, 10%, 40%);
+    font-size: 0.9rem;
+}
+
+.location-brands-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.location-brands-logos img {
+    height: 4.5rem;
+    width: auto;
+    max-width: 14rem;
+    object-fit: contain;
 }
 
 /* Footer */
