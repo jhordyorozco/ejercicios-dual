@@ -69,11 +69,9 @@ body {
     white-space: nowrap;
 }
 
-
 .brand:hover {
     background: hsl(40, 29%, 71%);
 }
-
 
 .brand-icon {
     fill: none;
@@ -97,11 +95,9 @@ body {
     width: 2.3rem;
 }
 
-
 .icon-btn:hover {
     background: hsl(40, 29%, 71%);
 }
-
 
 .icon-btn svg {
     fill: none;
@@ -125,11 +121,9 @@ body {
     white-space: nowrap;
 }
 
-
 .new-chat:hover {
     background: hsl(39, 25%, 66%);
 }
-
 
 .new-chat svg {
     fill: none;
@@ -160,13 +154,11 @@ body {
     padding: 0.3rem;
 }
 
-
 .side-menu-section ul {
     display: grid;
     gap: 0.2rem;
     list-style: none;
 }
-
 
 .side-menu-section a {
     align-items: center;
@@ -179,7 +171,6 @@ body {
     text-decoration: none;
     white-space: nowrap;
 }
-
 
 .side-menu-section a:hover {
     background: hsl(40, 29%, 71%);
@@ -203,7 +194,6 @@ body {
     padding: 0.7rem 0.3rem;
 }
 
-
 .avatar {
     align-items: center;
     background: hsl(36, 24%, 44%);
@@ -218,18 +208,15 @@ body {
     width: 2rem;
 }
 
-
 .side-menu-user-info {
     overflow: hidden;
 }
-
 
 .side-menu-user-name {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
 
 .side-menu-user-plan {
     color: hsl(34, 17%, 39%);
@@ -293,7 +280,6 @@ body {
     justify-items: center;
     width: 2.3rem;
 }
-
 
 .send-btn:hover {
     background: hsl(34, 26%, 36%);
