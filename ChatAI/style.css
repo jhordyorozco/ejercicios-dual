@@ -31,7 +31,7 @@ body {
 
 #toggle:checked~.app {
     grid-template-columns: 4.2rem 1fr;
-}
+} 
 
 .label {
     max-width: 12rem;
