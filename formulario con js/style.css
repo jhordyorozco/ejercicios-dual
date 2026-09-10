@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --nav-text-color: hsl(0, 0%, 20%);
+    --btn-bg-color: hwb(239 0% 0%);
+    --btn-hover-color: hsl(239, 86%, 67%);
+    --btn-text-color: hsl(0, 0%, 100%);
+    --shadow: hsla(0, 0%, 0%, 0.2);
+    --background-form: hsla(213, 32%, 24%, 0.97);
+    --contact-form-check: hsl(0, 0%, 85%);
+    --contact-form: hsl(36, 43%, 66%);
+    --contact-h2: hsl(0, 0%, 100%);
+    --textarea: hsl(0, 0%, 85%);
+    --contact-form-button: hsl(36, 43%, 66%);
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3rem 0.2rem;
+    transition: border-color 0.2s ease;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--nav-text-color);
+}
+
+.btn-navbar .btn {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.contact-form {
+    display: grid;
+    width: min(42rem, 92%);
+    background: var(--background-form);
+    border: 1px solid var(--contact-form);
+    padding: 2.5rem 3rem;
+    gap: 2rem;
+}
+
+.contact-form h2 {
+    color: var(--contact-h2);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    text-align: center;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contact-form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid var(--textarea);
+    background: var(--white);
+    padding: 1rem 1.1rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--background-form);
+}
+
+.contact-form textarea {
+    min-height: 7rem;
+    resize: none;
+}
+
+.contact-form-check {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--contact-form-check);
+    font-size: 0.8rem;
+}
+
+.contact-form-check input {
+    margin-top: 0.2rem;
+}
+
+.contact-form-check a {
+    color: var(--contact-form-check);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.contact-form button {
+    grid-column: 1/-1;
+    background: var(--contact-form-button);
+    color: var(--white);
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    justify-self: start;
+}
+
+.contact-form button:hover {
+    background: var(--contact-form-check);
+}

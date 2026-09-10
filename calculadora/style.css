@@ -5,12 +5,23 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+:root {
+    --amarillo: hsl(48, 100%, 48%);
+    --amarilloclaro: hsl(49, 100%, 68%);
+    --gris: hsl(0, 0%, 33%);
+    --negro: hsl(0, 0%, 2%);
+    --grisoscuro: hsl(0, 0%, 13%);
+    --rojoscuro: hsl(0, 100%, 27%);
+    --rojo: hsl(0, 100%, 35%);
+    --blanco: hsl(0, 0%, 100%);
+}
+
 body {
     position: relative;
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background-color: hsl(0, 0%, 7%);
+    background-color: var(--negro);
     padding: 1rem;
 }
 
@@ -21,25 +32,25 @@ body {
 
 .calculadora {
     width: min(100%, 450px);
-    background-color: hsl(0, 0%, 2%);
+    background-color: var(--negro);
     padding: 2rem;
-    border: 3px solid hsl(48, 100%, 48%);
+    border: 3px solid var(--amarillo);
     border-radius: 1rem;
     z-index: 1000;
 }
 
 .marca {
-    color: hsl(48, 100%, 48%);
+    color: var(--amarillo);
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px hsl(0, 0%, 0%);
+    text-shadow: 2px 2px var(--negro);
 }
 
-.pantalla {
+.pantalla input {
     min-height: 5rem;
-    background-color: hsl(0, 0%, 13%);
-    border: 0.1rem solid hsl(0, 0%, 33%);
+    background-color: var(--grisoscuro);
+    border: 0.1rem solid var(--gris);
     padding: 1rem;
     text-align: right;
     border-radius: 0.5rem;
@@ -48,7 +59,7 @@ body {
 }
 
 .resultado {
-    color: hsl(48, 100%, 48%);
+    color: var(--amarillo);
     font-size: 2rem;
 }
 
@@ -75,43 +86,43 @@ button {
     transition: 0.2s;
 }
 
-.numero {
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
-    border: 1px solid hsl(0, 0%, 33%);
-}
-
-.numero:hover {
-    background-color: hsl(0, 0%, 27%);
-}
-
-.igual {
-    background-color: hsl(48, 100%, 48%);
-    color: hsl(0, 0%, 7%);
-}
-
-.igual:hover {
-    background-color: hsl(49, 100%, 68%);
-}
-
 .limpiar {
-    background-color: hsl(0, 100%, 27%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--rojoscuro);
+    color: var(--blanco);
 }
 
 .limpiar:hover {
-    background-color: hsl(0, 100%, 35%);
+    background-color: var(--rojo);
+}
+
+.igual {
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+.igual:hover {
+    background-color: var(--amarilloclaro);
+}
+
+.numero {
+    background-color: var(--grisoscuro);
+    color: var(--blanco);
+    border: 1px solid var(--grisoscuro);
+}
+
+.numero:hover {
+    background-color: var(--grisoscuro);
 }
 
 .teclado .suma .resta .multiplicacion .division {
-    background-color: hsl(0, 0%, 33%);
-    color: hsl(48, 100%, 48%);
+    background-color: var(--grisoscuro);
+    color: var(--amarillo);
 }
 
 .operador .suma:hover,
 .resta:hover,
 .multiplicacion:hover,
 .division:hover {
-    background-color: hsl(48, 100%, 48%);
-    color: hsl(0, 0%, 7%);
+    background-color: var(--amarillo);
+    color: var(--negro);
 }

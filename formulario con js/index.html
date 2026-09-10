@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./src/index.js"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <section class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">View</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Locate</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="btn-navbar">
+                <button class="btn">Sign Up</button>
+                <button class="btn">Log In</button>
+            </div>
+        </section>
+    </header>
+
+    <section class="contact">
+        <div class="contact-form">
+            <h2>CONTACT US</h2>
+            <form>
+                <div class="contact-form-row">
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="Last Name" name="lastname">
+                </div>
+                <input type="email" placeholder="Email" name="correo">
+                <input type="tel" placeholder="Phone Number" name="tel">
+                <textarea placeholder="Message" name="message"></textarea>
+                <label class="contact-form-check">
+                    <label class="contact-form-check">
+                        <input type="checkbox" name="check">
+                        <span>I have read and accept the <a href="#">privacy policies</a></span>
+                    </label>
+                    <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
