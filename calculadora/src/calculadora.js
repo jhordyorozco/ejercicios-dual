@@ -1,3 +1,3 @@
 export default (() => {
-  document.querySelector
+  onclic
 })();
