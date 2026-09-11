@@ -3,34 +3,74 @@ export default (() => {
 
   document.querySelector('.calculadora').addEventListener('click', (event) =>{
     if (event.target.classList.contains('1')) {
-      input.value += 1
+      if (input.value === '0') {
+        input.value = '1'
+      } else {
+        input.value += 1
+      }
     }
     if (event.target.classList.contains('2')) {
-      input.value += 2
+      if (input.value === '0') {
+        input.value = '2'
+      } else {
+        input.value += 2
+      }
     }
     if (event.target.classList.contains('3')) {
-      input.value += 3
+      if (input.value === '0') {
+        input.value = '3'
+      } else {
+        input.value += 3
+      }
     }
     if (event.target.classList.contains('4')) {
-      input.value += 4
+      if (input.value === '0') {
+        input.value = '4'
+      } else {
+        input.value += 4
+      }
     }
     if (event.target.classList.contains('5')) {
-      input.value += 5
+      if (input.value === '0') {
+        input.value = '5'
+      } else {
+        input.value += 5
+      }
     }
     if (event.target.classList.contains('6')) {
-      input.value += 6
+      if (input.value === '0') {
+        input.value = '6'
+      } else {
+        input.value += 6
+      }
     }
     if (event.target.classList.contains('7')) {
-      input.value += 7
+      if (input.value === '0') {
+        input.value = '7'
+      } else {
+        input.value += 7
+      }
     }
     if (event.target.classList.contains('8')) {
-      input.value += 8
+      if (input.value === '0') {
+        input.value = '8'
+      } else {
+        input.value += 8
+      }
     }
     if (event.target.classList.contains('9')) {
-      input.value += 9
+      if (input.value === '0') {
+        input.value = '9'
+      } else {
+        input.value += 9
+      }
     }
     if (event.target.classList.contains('0')) {
-      input.value += 0 
+      if (input.value === '0') {
+        input.value = '0'
+      } else {
+        input.value += 0
+      } 
     }
 
     if (event.target.classList.contains('suma')) {
@@ -55,7 +95,7 @@ export default (() => {
 
 
     document.querySelector('.limpiar').addEventListener('click', () => {
-      input.value = 'null'
+      input.value = ''
     })
 
     document.querySelector('.igual').addEventListener('click', () => {
