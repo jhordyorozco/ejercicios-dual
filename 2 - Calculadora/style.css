@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 :root {
@@ -23,20 +22,32 @@ body {
     place-items: center;
     background-color: var(--negro);
     padding: 1rem;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .fondo {
-    position: absolute;
-    background-size: cover;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.fondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
 }
 
 .calculadora {
+    position: relative;
+    z-index: 1;
     width: min(100%, 450px);
     background-color: var(--negro);
     padding: 2rem;
     border: 3px solid var(--amarillo);
     border-radius: 1rem;
-    z-index: 1000;
 }
 
 .marca {
@@ -86,6 +97,29 @@ button {
     transition: 0.2s;
 }
 
+.numero,
+.decimal {
+    background-color: var(--grisoscuro);
+    color: var(--blanco);
+    border: 1px solid var(--gris);
+}
+
+.numero:hover,
+.decimal:hover {
+    background-color: var(--gris);
+}
+
+.borrar {
+    background-color: var(--grisoscuro);
+    color: var(--amarillo);
+    border: 1px solid var(--amarillo);
+}
+
+.borrar:hover {
+    background-color: var(--rojoscuro);
+    color: var(--blanco);
+}
+
 .limpiar {
     background-color: var(--rojoscuro);
     color: var(--blanco);
@@ -104,25 +138,18 @@ button {
     background-color: var(--amarilloclaro);
 }
 
-.numero {
-    background-color: var(--grisoscuro);
-    color: var(--blanco);
-    border: 1px solid var(--grisoscuro);
-}
-
-.numero:hover {
-    background-color: var(--grisoscuro);
-}
-
-.teclado .suma .resta .multiplicacion .division {
+.operador .suma,
+.operador .resta,
+.operador .multiplicacion,
+.operador .division {
     background-color: var(--grisoscuro);
     color: var(--amarillo);
 }
 
 .operador .suma:hover,
-.resta:hover,
-.multiplicacion:hover,
-.division:hover {
+.operador .resta:hover,
+.operador .multiplicacion:hover,
+.operador .division:hover {
     background-color: var(--amarillo);
     color: var(--negro);
 }

@@ -9,31 +9,38 @@
     --text-color: hsl(0, 0%, 100%);
     --plus-button: hsl(120, 100%, 25%);
     --minus-button: hsl(0, 100%, 50%);
+    --card-bg: hsl(210, 20%, 98%);
+    --shadow: hsla(0, 0%, 0%, 0.149);
+    --background: hsl(210, 20%, 94%);
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-.title {
-    text-align: center;
-    padding: 4rem;
-    background-color: var(--title)
-}
-
-.title-container h1 {
-    font-size: 4rem;
-    color: var(--text-color);
-}
-
 .counter {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    overflow: hidden;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+.counter-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 4rem;
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 1.5rem var(--shadow);
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--title);
+    text-align: center;
 }
 
 .counter-container {
@@ -55,18 +62,16 @@ input::-webkit-inner-spin-button {
 .counter-container button {
     padding: 2rem 4rem;
     font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 .minus {
-    color: var(--text-color);
     background-color: var(--minus-button);
-    cursor: pointer;
 }
 
 .plus {
-    color: var(--text-color);
     background-color: var(--plus-button);
-    cursor: pointer;
 }
 
 .counter-container input {
