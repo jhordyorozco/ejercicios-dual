@@ -42,7 +42,7 @@ body {
 
 .calculadora {
     position: relative;
-    z-index: 1;
+    z-index: 1000;
     width: min(100%, 450px);
     background-color: var(--negro);
     padding: 2rem;
@@ -59,7 +59,7 @@ body {
 }
 
 .pantalla input {
-    min-height: 5rem;
+    min-height: 4rem;
     background-color: var(--grisoscuro);
     border: 0.1rem solid var(--gris);
     padding: 1rem;
@@ -67,6 +67,13 @@ body {
     border-radius: 0.5rem;
     margin-bottom: 0.7rem;
     width: 100%;
+}
+
+.historial {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    text-align: right;
+    border: none;
 }
 
 .resultado {

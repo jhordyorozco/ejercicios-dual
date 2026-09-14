@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./src/index.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <section class="tabs">
+
+            <ul class="tabs-list">
+                <li class="tab-btn" data-target="general">Vista general</li>
+                <li class="tab-btn" data-target="detalles">Detalles del producto</li>
+                <li class="tab-btn" data-target="medidas">Medidas</li>
+            </ul>
+
+            <div class="tabs-panels">
+                <div class="tab-panel" data-target="general">
+                    <p>Un estilo cálido y apacible con un acabado mate. Este jarrón de gres presenta lunares
+                        pintados a mano que le dan un estilo único con textura. La amplia apertura permite
+                        distribuir las flores para dejarlas de la forma más bonita.</p>
+                </div>
+
+                <div class="tab-panel" data-target="detalles" hidden>
+                    <p>Los sutiles lunares pintados a mano hacen que cada jarrón sea único y le aportan textura
+                        y sensación de calidad. Puedes usarlo para unas elegantes rosas o un ramo más sencillo,
+                        o como adorno en cualquier parte de la casa.</p>
+                </div>
+
+                <div class="tab-panel" data-target="medidas" hidden>
+                    <div class="tab-img">
+                        <img src="./img/florero.webp" alt="Jarrón grid">
+                    </div>
+                    <div class="tab-info">
+                        <details>
+                            <summary>Medidas</summary>
+                            <p>diámetro
+                                18 cm
+                                Altura
+                                16 cm</p>
+                        </details>
+                        <details>
+                            <summary>Embalaje</summary>
+                            <span>906.072.97</span>
+                            <p>1 × BLODBJÖRK
+                                Florero / jarrón
+                                906.072.97
+                                Largo: 16 cm
+                                Peso: 1.45 kg
+                                Diámetro: 18 cm</p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
