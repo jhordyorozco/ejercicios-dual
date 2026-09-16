@@ -69,13 +69,6 @@ body {
     width: 100%;
 }
 
-.historial {
-    font-size: 0.9rem;
-    opacity: 0.6;
-    text-align: right;
-    border: none;
-}
-
 .resultado {
     color: var(--amarillo);
     font-size: 2rem;
