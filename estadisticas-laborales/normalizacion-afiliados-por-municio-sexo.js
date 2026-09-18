@@ -16,8 +16,9 @@
     })
 
     filterData = filterData.reduce((acumulador, element) => {
+      const sexo = element["Sexo"] === "Hombres" ? "M" : "F"
       let [CodigoPostal, Municipio] = element['Isla y municipio de residencia'].split(" ")
-      let cantidad = Number(element.cantidad) ? Number(element.cantidad.replace('.', '')) : Number(element.cantidad)
+      let cantidad = Number(element.cantidad) ? Number(element.cantidad.replaceAll('.', '')) : Number(element.cantidad)
       if (!acumulador[CodigoPostal]) acumulador[CodigoPostal] = {}
       if (!acumulador[CodigoPostal][element.Sexo]) acumulador[CodigoPostal][element.Sexo] = {}
       acumulador[CodigoPostal][element.Sexo][element.Periodo] = {
