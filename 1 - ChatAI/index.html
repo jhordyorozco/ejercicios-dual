@@ -5,15 +5,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sendo Beta la IA der pueblo</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <script type="module" src="../../src/index.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <app-shell>
-    <menu-slidercss slot="menu"></menu-slidercss>
-    <box-prompt slot="content"></box-prompt>
-  </app-shell>
+  <div class="app">
+    <section class="side-menu">
+      <div class="side-menu-top">
+        <button class="brand" type="button" aria-label="Colapsar menú">
+          <svg class="brand__icon" viewBox="0 0 24 24">
+            <path d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.3 6.8 3.8v7.8L12 19.7l-6.8-3.8V8.1L12 4.3Z"></path>
+          </svg>
+          <span class="label">Sendo Beta</span>
+        </button>
+        <button class="icon-btn" type="button" aria-label="Buscar">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5L20.5 19l-5-5Zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9Z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <a href="#" class="new-chat">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12h14"></path>
+        </svg>
+        <span class="label">Nuevo chat</span>
+      </a>
+
+      <nav class="side-menu-section">
+        <span class="side-menu-section__title label">Fijado</span>
+        <ul>
+          <li>
+            <a href="#">
+              <svg viewBox="0 0 24 24">
+                <path d="M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12Z"></path>
+              </svg>
+              <span class="label">Pagar menos impuesto Hacienda</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg viewBox="0 0 24 24">
+                <path d="M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12Z"></path>
+              </svg>
+              <span class="label">Tutorial para ser millonario</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="side-menu-section side-menu-section--grow">
+        <span class="side-menu-section__title label">Recientes</span>
+        <ul class="js-recent-list"></ul>
+      </nav>
+
+      <div class="side-menu-user label">
+        <div class="avatar">JO</div>
+        <div class="side-menu-user__info">
+          <span class="side-menu-user__name">Jhordy Orozco</span>
+          <span class="side-menu-user__plan">Admin</span>
+        </div>
+      </div>
+    </section>
+
+    <main class="content">
+      <h1>Bienvenido mi hermano</h1>
+      <div class="prompt-box">
+        <button class="icon-btn" type="button" aria-label="Adjuntar">
+          <svg viewBox="0 0 24 24">
+            <path d="M17.5 8.5 9.6 16.4a2.5 2.5 0 0 1-3.5-3.5l8.3-8.3a4 4 0 1 1 5.7 5.7L11.7 18.7a5.5 5.5 0 0 1-7.8-7.8L12.5 2.3"></path>
+          </svg>
+        </button>
+        <input type="text" placeholder="Qué vaina necesitáis que te resuelva hoy?">
+        <button class="send-btn" type="button" aria-label="Enviar">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 19V5M5 12l7-7 7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="index.js"></script>
 </body>
 
 </html>
