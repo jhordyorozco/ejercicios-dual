@@ -1,4 +1,5 @@
-* {
+
+     * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -262,7 +263,6 @@ body {
     outline: none;
     width: 100%;
 }
-
 
 .prompt-box input::placeholder {
     color: hsl(37, 12%, 49%);
