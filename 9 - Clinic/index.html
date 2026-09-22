@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Médico Online 24/7 | Cita Médica Online - Clínica Digital</title>
+</head>
+<body>
+
+  <app-header>
+    <a slot="brand" href="#">Clínica Digital</a>
+    <a slot="nav" href="#" data-target="especialidades">Especialidades</a>
+    <a slot="nav" href="#sobre-nosotros">Sobre Nosotros</a>
+    <a slot="nav" href="#" data-target="contacto">Contacto</a>
+    <a slot="cta" href="#" data-target="consulta">Solicitar Consulta</a>
+  </app-header>
+
+  <hero-section>
+    <img slot="media" src="assets/hero.webp" alt="Equipo médico sonriente de Clínica Digital">
+    <span slot="eyebrow">Te atendemos en menos de 15 minutos</span>
+    <h1 slot="title">Tu Médico Online de Confianza: Cita Médica Online sin Esperas.</h1>
+    <p slot="body">Tu salud integral en un solo lugar: desde medicina general y pediatría hasta la gestión inmediata de tus recetas, informes o análisis, y mucho más. Todo lo que tu familia necesita, sin salir de casa.</p>
+    <div slot="actions">
+      <a class="button button--primary" href="#" data-target="consulta">Hablar con un médico ahora</a>
+      <a class="button button--secondary" href="#" data-target="especialidades">Ver especialidades</a>
+    </div>
+    <span slot="badge">Más de 20.000 pacientes ya han confiado en Clínica Digital</span>
+  </hero-section>
+
+  <card-grid-section data-section="condiciones">
+    <span slot="eyebrow">¿Qué condición te preocupa hoy?</span>
+    <h2 slot="title">Diagnóstico y tratamiento online para las patologías más comunes</h2>
+
+    <info-card slot="cards">
+      <span slot="icon">👁️</span>
+      <h3 slot="title">Conjuntivitis</h3>
+      <p slot="body">Tratamiento inmediato. Identifica si sufres conjuntivitis vírica o alérgica y obtén tu receta de colirios oficial.</p>
+      <a slot="link" href="#">Leer más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">🫁</span>
+      <h3 slot="title">Asma Bronquial</h3>
+      <p slot="body">Diferencia el asma alérgica de la bronquial con una valoración médica inmediata y gestión de recetas de control.</p>
+      <a slot="link" href="#">Leer más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">💊</span>
+      <h3 slot="title">Infección de Orina o Cistitis</h3>
+      <p slot="body">Trata tu cistitis de forma rápida y discreta. Obtén diagnóstico y receta electrónica de antibióticos al instante.</p>
+      <a slot="link" href="#">Leer más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">🧠</span>
+      <h3 slot="title">Migrañas y Cefaleas</h3>
+      <p slot="body">Identifica el origen de tus migrañas y accede a tratamientos preventivos diseñados por especialistas.</p>
+      <a slot="link" href="#">Leer más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">🌿</span>
+      <h3 slot="title">Alergias en la Piel</h3>
+      <p slot="body">Diagnóstico visual inmediato para erupciones y picores. Sube tus fotos y habla con un médico en minutos.</p>
+      <a slot="link" href="#">Leer más →</a>
+    </info-card>
+
+    <a slot="link" href="#">Ver todas las condiciones médicas</a>
+  </card-grid-section>
+
+  <steps-section data-section="como-funciona">
+    <h2 slot="title">Tu médico online en 3 pasos, estés donde estés</h2>
+
+    <step-item slot="step" number="1">
+      <h3 slot="title">Reserva tu Cita Médica Online</h3>
+      <p slot="body">Selecciona la especialidad y el horario que mejor te convenga. Tras el pago seguro, recibirás el enlace de acceso a tu videoconsulta.</p>
+    </step-item>
+
+    <step-item slot="step" number="2">
+      <h3 slot="title">Consulta Online</h3>
+      <p slot="body">Hablarás con tu médico mediante una plataforma privada y encriptada que garantiza tu total confidencialidad.</p>
+    </step-item>
+
+    <step-item slot="step" number="3">
+      <h3 slot="title">Recibe tu diagnóstico y tratamiento</h3>
+      <p slot="body">Obtendrás tu diagnóstico oficial, el informe médico firmado y tu receta electrónica válida en cualquier farmacia.</p>
+    </step-item>
+
+    <span slot="highlight">Más de 15.000 pacientes ya han comprobado los beneficios de nuestra cita médica online.</span>
+  </steps-section>
+
+  <card-grid-section data-section="especialidades">
+    <span slot="eyebrow">Especialidades en telemedicina a un solo clic</span>
+    <h2 slot="title">Una red completa, de pediatría a salud mental</h2>
+    <p slot="subtitle">Elige la especialidad que necesitas y reserva tu cita médica online con doctores colegiados en activo.</p>
+
+    <info-card slot="cards">
+      <span slot="icon">🩺</span>
+      <h3 slot="title">Medicina General 24/7</h3>
+      <p slot="body">Tu punto de entrada a una salud ágil. Consultas en menos de 15 minutos, diagnósticos y recetas electrónicas.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">🧒</span>
+      <h3 slot="title">Pediatría</h3>
+      <p slot="body">Consultas rápidas y cercanas para resolver dudas, procesos febriles y seguimiento infantil sin esperas.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">🧴</span>
+      <h3 slot="title">Dermatología</h3>
+      <p slot="body">Analizamos tus fotos en alta resolución para tratar acné, manchas o alopecia con precisión clínica.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">❤️</span>
+      <h3 slot="title">Cardiología</h3>
+      <p slot="body">Atención personalizada para abordar hipertensión, arritmias o riesgo cardíaco con precisión clínica.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">🍎</span>
+      <h3 slot="title">Nutrición</h3>
+      <p slot="body">Plan nutricional a medida para tratar la inflamación, la gestión del peso o las intolerancias.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">💬</span>
+      <h3 slot="title">Psicología</h3>
+      <p slot="body">Terapia personalizada para tratar la ansiedad, el estrés o los problemas de ánimo.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+
+    <a slot="link" href="#">Ver todas las Especialidades</a>
+  </card-grid-section>
+
+  <card-grid-section data-section="servicios">
+    <span slot="eyebrow">Servicios de telemedicina inmediata</span>
+    <h2 slot="title">Gestiones digitales para toda tu familia</h2>
+
+    <info-card slot="cards">
+      <span slot="icon">📋</span>
+      <h3 slot="title">Recetas Médicas</h3>
+      <p slot="body">Obtén tu receta médica privada oficial en menos de 15 minutos, disponibles 24/7 para renovaciones urgentes.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">🩸</span>
+      <h3 slot="title">Análisis de Sangre</h3>
+      <p slot="body">Interpretación de analíticas y solicitud de pruebas con seguimiento de un médico colegiado.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">📄</span>
+      <h3 slot="title">Informes y Justificantes</h3>
+      <p slot="body">Emisión de informes de salud y justificantes de asistencia tras tu consulta médica online.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">✈️</span>
+      <h3 slot="title">Medicina del Viajero</h3>
+      <p slot="body">Vacunas y asesoramiento médico para tus viajes al extranjero, con recomendaciones a medida.</p>
+      <a slot="link" href="#">Ver más →</a>
+    </info-card>
+  </card-grid-section>
+
+  <card-grid-section data-section="equipo">
+    <span slot="eyebrow">Médicos Colegiados y Especialistas Reales</span>
+    <h2 slot="title">Tu salud en las mejores manos</h2>
+
+    <info-card slot="cards">
+      <span slot="icon">👨‍⚕️</span>
+      <h3 slot="title">Dr. David Araguás</h3>
+      <p slot="body">Director Médico</p>
+      <span slot="meta">Núm. Colegiado: 2204292</span>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">👩‍⚕️</span>
+      <h3 slot="title">Dra. Andrea Seoane</h3>
+      <p slot="body">Pediatría</p>
+      <span slot="meta">Núm. Colegiado: 2876479</span>
+    </info-card>
+
+    <info-card slot="cards">
+      <span slot="icon">👩‍⚕️</span>
+      <h3 slot="title">Dra. Yolanda Morte</h3>
+      <p slot="body">Medicina General</p>
+      <span slot="meta">Núm. Colegiado: 2868816</span>
+    </info-card>
+
+    <a slot="link" href="#">Ver todos los especialistas</a>
+  </card-grid-section>
+
+  <faq-section data-section="faq">
+    <h2 slot="title">Preguntas frecuentes sobre Clínica Digital</h2>
+
+    <details slot="item">
+      <summary>¿Estáis disponibles las 24 horas del día?</summary>
+      <p>Sí, nuestro servicio de medicina general online está disponible 24/7 para emergencias y consultas inmediatas. Para el resto de especialidades puedes reservar cita para el día siguiente o cuando mejor te convenga.</p>
+    </details>
+
+    <details slot="item">
+      <summary>¿Cómo recibiré mi receta médica electrónica?</summary>
+      <p>Tras finalizar tu consulta, si el médico lo considera necesario, recibirás tu receta electrónica oficial en tu zona privada y por correo electrónico. Son privadas y legales, válidas en cualquier farmacia de España.</p>
+    </details>
+
+    <details slot="item">
+      <summary>¿Son válidas vuestras recetas en cualquier farmacia?</summary>
+      <p>Sí. Nuestras recetas médicas privadas son emitidas por médicos colegiados en España y son válidas en cualquier farmacia. Las recibirás de forma digital en tu área privada tras la consulta.</p>
+    </details>
+
+    <details slot="item">
+      <summary>¿Cómo se garantiza la privacidad de mis datos de salud?</summary>
+      <p>Cumplimos estrictamente con el RGPD y la normativa sanitaria vigente. Todas las consultas y datos están protegidos mediante sistemas de cifrado seguro.</p>
+    </details>
+
+    <details slot="item">
+      <summary>¿Es posible realizar la consulta en inglés?</summary>
+      <p>Sí, contamos con un equipo médico bilingüe preparado para realizar la consulta íntegramente en inglés si así lo prefieres.</p>
+    </details>
+  </faq-section>
+
+  <cta-banner data-section="consulta">
+    <h2 slot="title">Únete a los más de 20.000 pacientes que ya confían en Clínica Digital</h2>
+    <p slot="body">Consulta completa desde solo 49,99 €. Incluye diagnóstico, seguimiento y emisión de recetas si fueran necesarias. Sin costes adicionales, sin sorpresas.</p>
+    <a slot="action" href="#">Hablar con un médico ahora</a>
+  </cta-banner>
+
+  <app-footer data-section="contacto">
+    <footer-column slot="column">
+      <span slot="heading">Especialidades</span>
+      <a slot="link" href="#">Medicina General 24/7</a>
+      <a slot="link" href="#">Pediatría</a>
+      <a slot="link" href="#">Dermatología</a>
+      <a slot="link" href="#">Psicología</a>
+    </footer-column>
+
+    <footer-column slot="column">
+      <span slot="heading">Servicios Médicos</span>
+      <a slot="link" href="#">Recetas Médicas Online</a>
+      <a slot="link" href="#">Tratamiento Anticonceptivo</a>
+      <a slot="link" href="#">Medicina del Viajero</a>
+    </footer-column>
+
+    <footer-column slot="column">
+      <span slot="heading">Sobre Nosotros</span>
+      <a slot="link" href="#">Quiénes Somos</a>
+      <a slot="link" href="#">Especialistas</a>
+      <a slot="link" href="#">Cómo Funciona</a>
+      <a slot="link" href="#">Contacto</a>
+    </footer-column>
+
+    <footer-column slot="column">
+      <span slot="heading">Contacto</span>
+      <a slot="link" href="mailto:hola@clinicadigital.com">hola@clinicadigital.com</a>
+    </footer-column>
+
+    <a slot="social" href="#">Instagram</a>
+    <a slot="social" href="#">LinkedIn</a>
+    <a slot="social" href="#">TikTok</a>
+    <a slot="social" href="#">YouTube</a>
+
+    <span slot="copyright">©2026 Clínica Digital</span>
+    <a slot="legal" href="#">Aviso Legal</a>
+  </app-footer>
+
+  <script type="module" src="src/index.js"></script>
+</body>
+</html>
