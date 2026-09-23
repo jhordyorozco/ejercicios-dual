@@ -1,3 +1,2 @@
-import './menu-toggle.js';
-import './recent-chats.js';
-
+import './components/app-menu.js';
+import './components/box-prompt.js';
