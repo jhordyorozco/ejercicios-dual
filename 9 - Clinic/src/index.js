@@ -1,13 +1,31 @@
-import './components/app-header.js';
-import './components/hero-section.js';
-import './components/info-card.js';
-import './components/card-grid-section.js';
-import './components/steps-section.js';
-import './components/step-item.js';
-import './components/faq-section.js';
-import './components/cta-banner.js';
-import './components/footer-column.js';
-import './components/app-footer.js';
-import {initNavigation} from './navigation.js';
+import './components/header.js'
+import './components/logo.js'
+import './components/boton.js'
+import './components/menu.js'
 
-initNavigation();
+import './components/main.js'
+import './components/hero-content.js'
+import './components/hero-image.js'
+import './components/logos-carousel.js'
+
+import './components/partners.js'
+
+import './components/treatment.js'
+import './components/treatment-carousel.js'
+
+import './components/steps.js'
+
+import './components/faq.js';
+import './components/faq-content.js';
+import './components/faq-image.js';
+
+import './components/specialties.js'
+import './components/specialties-carousel.js'
+
+import './components/form.js'
+
+import './components/footer.js'
+import './components/footer-links.js'
+import './components/footer-contact.js'
+import './components/omc-badge.js'
+import './components/footer-bottom.js'
